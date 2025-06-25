@@ -120,7 +120,6 @@ Start-Process `
     -WorkingDirectory $tempFolder `
     -NoNewWindow `
     -Wait
-# Start-Process -FilePath $gitBashPath -ArgumentList "`"$gitLanguageBashFilePath`"" -WorkingDirectory $tempFolder -NoNewWindow -Wait
 # 清理文件
 if (Test-Path $tempFolder) {
     Remove-Item -Path $tempFolder -Recurse -Force

@@ -2,7 +2,7 @@
 # Author: xkk1
 # 描述：小喾苦 Git for Windows 语言包安装 Bash 脚本（需管理员权限）
 # 注意：请以 Git Bash（管理员权限）运行此脚本
-# "C:\Program Files\Git\bin\bash.exe" WinGit_zh-CN.sh
+# "C:\Program Files\Git\bin\bash.exe" WinGitLang.sh
 
 # 参考：https://zhuanlan.zhihu.com/p/681521193
 
