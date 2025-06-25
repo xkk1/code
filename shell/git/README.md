@@ -26,8 +26,15 @@ $gitLanguageBashUrl = "https://xkk1.github.io/code/shell/git/WinGitLang.sh"
 irm https://xkk1.github.io/code/shell/git/WinGitLang.ps1 | iex
 ```
 
+```shell
+# 解决乱码，参考 https://www.cnblogs.com/piapia/p/5452448.html
+[System.Text.Encoding]::GetEncoding(65001).GetString((iwr "https://xkk1.github.io/code/shell/git/WinGitLang.ps1").Content) | iex
+```
+
 或设置参数的本地执行，需要添加执行策略 `Set-ExecutionPolicy RemoteSigned`
 
 ```shell
 .\WinGitLang.ps1 -lang "zh_CN" -url "https://xkk1.github.io/code/shell/git/WinGitLang.sh"
 ```
+
+**环境要求**: PowerShell, msgfmt 工具（gettext） 或 WinGet（调用安装）
